@@ -7,7 +7,7 @@ This repository contains the whole summary of the hands-on work done by Abhinav 
 * [Module 1: Scaling Beyond CMOS: FinFET Devices and Innovations](#Module-1)
     + [Evolution of CMOS Technology](#Evolution-of-CMOS-Technology)
     + [Reason for Using FinFETs](#Reason-for-Using-FinFETs)
-    + [Impact on Circuit Performance: Tri-Gate vs Planar Transistors](#Impact-on-Circuit-Performance:-Tri-Gate-vs-Planar-Transistors)
+    + [Impact on Circuit Performance: Tri-Gate vs Planar Transistors](#Impact-on-Circuit-Performance-Tri-Gate-vs-Planar-Transistors)
     + [CMOS Technology Scaling](#CMOS-Technology-Scaling)
    
    
