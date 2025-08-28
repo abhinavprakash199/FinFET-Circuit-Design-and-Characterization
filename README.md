@@ -9,6 +9,8 @@ This repository contains the whole summary of the hands-on work done by Abhinav 
     + [Reason for Using FinFETs](#Reason-for-Using-FinFETs)
     + [Impact on Circuit Performance: Tri-Gate vs Planar Transistors](#Impact-on-Circuit-Performance-Tri-Gate-vs-Planar-Transistors)
     + [CMOS Technology Scaling](#CMOS-Technology-Scaling)
+    + [Standard Cell area Scaling](#Standard-Cell-area-Scaling)
+    + [Parasitic Resistance](#Parasitic-Resistance)
    
    
     
@@ -101,7 +103,34 @@ CMOS scaling has evolved from planar transistors to advanced 3D and 2D architect
 
 <img width="1676" height="790" alt="Screenshot 2025-08-28 114538" src="https://github.com/user-attachments/assets/d647e446-8afd-4734-9755-57a2bb7cdcb9" />
 
-### 
+### Standard Cell area Scaling
+---
+Standard cell area scaling in Samsung’s advanced nodes—from 10nm to 5nm—demonstrates progressive reductions in both width and height by optimizing Contacted Poly Pitch (CPP) and fin count. The 10nm node features a 204 nm width and 420 nm height with 10 fins, while the 5nm node maintains a 162 nm width but reduces height to 216 nm with 8 fins. These refinements enable higher transistor density, improved performance, and more efficient power usage in modern semiconductor designs.
+
+<img width="1421" height="705" alt="Screenshot 2025-08-28 161703" src="https://github.com/user-attachments/assets/c4757cac-36d6-4e7f-a92d-7958fca75891" />
+
+- Double Diffusion Break (DDB): Used to isolate adjacent transistors, but consumes more area.
+- Single Diffusion Break (SDB): Reduces cell width by minimizing isolation space between transistors.
+- Contact Over Field Gate (COFG): Enables tighter layout by placing contacts over field gates.
+- Contact Over Active Gate (COAG): Further shrinks area by allowing contacts directly over active gates.
+- X-axis and Y-axis Scaling: Achieved through layout optimizations to reduce both width and height of cells.
+- 6-Track Tall Cell: Standard cell height defined by six metal tracks, balancing density and routing.
+- Front-side vs Back-side PDN: Back-side power delivery improves routing efficiency and reduces congestion.
+- Microscopic Views: Show structural differences between DDB and SDB, and NMOS cell configurations.
+- Cell Height Optimization: Includes power rail (PVR) and ground (GND) alignment for compact design.
+
+<img width="1567" height="748" alt="Screenshot 2025-08-28 161716" src="https://github.com/user-attachments/assets/f8c2bbc9-a820-4da6-be52-04d5174a7ad3" />
+
+### Parasitic Resistance
+--- 
+
+- Planar MOSFET: Has a parasitic resistance ratio <1, indicating low external resistance relative to channel resistance.
+- FinFET: Shows a balanced ratio =1, meaning external and channel resistances are comparable.
+- GAA FET: Exhibits a higher parasitic resistance ratio ∼3, due to reduced contact width relative to gate width.
+- CFET: Also has a high parasitic resistance ratio ∼3, similar to GAA, reflecting challenges in contact scaling.
+
+<img width="1587" height="839" alt="Screenshot 2025-08-28 161800" src="https://github.com/user-attachments/assets/cd0ba12b-5d64-40d9-aef0-ce0e46986338" />
+
 ## Module 2:
 ## Lab-to-Simulation: 7nm FinFET Inverter Performance Analysis
 ---
