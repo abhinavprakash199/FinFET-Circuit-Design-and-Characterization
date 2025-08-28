@@ -11,6 +11,7 @@ This repository contains the whole summary of the hands-on work done by Abhinav 
     + [CMOS Technology Scaling](#CMOS-Technology-Scaling)
     + [Standard Cell area Scaling](#Standard-Cell-area-Scaling)
     + [Parasitic Resistance](#Parasitic-Resistance)
+    + [Parasitic Capacitance](#Parasitic-Capacitance)
    
    
     
@@ -123,14 +124,24 @@ Standard cell area scaling in Samsung’s advanced nodes—from 10nm to 5nm—de
 
 ### Parasitic Resistance
 --- 
+Parasitic resistance in transistors, particularly external resistance (R_EXT), arises from multiple components such as contact resistance (R_C), epitaxial layers (R_EPI), and interconnects (R_CA, R_TS). Initially, NFETs showed R_EXT dominated by R_C (63%), while PFETs had a more balanced distribution. Improvements have significantly reduced these resistances by optimizing contact interfaces and doping profiles. Lowering the Schottky Barrier Height (SBH) and increasing doping levels enhances ohmic and tunneling contacts, as described by the contact resistivity equation. These advancements contribute to better device performance and scaling efficiency.
+<img width="1611" height="662" alt="Screenshot 2025-08-28 161835" src="https://github.com/user-attachments/assets/dabeabe9-2968-4361-a7b1-4293d0da0341" />
 
 - Planar MOSFET: Has a parasitic resistance ratio <1, indicating low external resistance relative to channel resistance.
 - FinFET: Shows a balanced ratio =1, meaning external and channel resistances are comparable.
 - GAA FET: Exhibits a higher parasitic resistance ratio ∼3, due to reduced contact width relative to gate width.
 - CFET: Also has a high parasitic resistance ratio ∼3, similar to GAA, reflecting challenges in contact scaling.
 
-<img width="1587" height="839" alt="Screenshot 2025-08-28 161800" src="https://github.com/user-attachments/assets/cd0ba12b-5d64-40d9-aef0-ce0e46986338" />
+<img width="1587" height="701" alt="Screenshot 2025-08-28 161800" src="https://github.com/user-attachments/assets/258f50c8-5165-478b-a217-39ce3529b151" />
 
+### Parasitic Capacitance
+--- 
+Parasitic capacitance significantly impacts transistor performance, especially as technology scales from 22nm to 7nm. The breakdown of effective capacitance (Ceff) shows a growing dominance of gate capacitance (Cgc) and overlap capacitance (Cof) in advanced nodes, with (Cpa-ca) reducing from 56% at 22nm to just 15% at 7nm. Spacer materials play a crucial role—SiBCN spacers offer an 8% delay improvement and reduce Ceff compared to SiN. Air spacers further lower capacitance, achieving up to 15% reduction in ring oscillator stages. These innovations help minimize delay and enhance overall device speed and efficiency.
+
+<img width="1563" height="717" alt="Screenshot 2025-08-28 163623" src="https://github.com/user-attachments/assets/e54d98d5-593f-45ba-a2c8-d9d70e3160ea" />
+
+### 
+---
 ## Module 2:
 ## Lab-to-Simulation: 7nm FinFET Inverter Performance Analysis
 ---
