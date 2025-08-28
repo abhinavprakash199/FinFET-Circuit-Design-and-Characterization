@@ -157,6 +157,7 @@ Parasitic capacitance significantly impacts transistor performance, especially a
 
 ## References
 ---
+- [GitGub](https://github.com/RSMadhuri66/avsdbgr_7nm)
 
 
 
