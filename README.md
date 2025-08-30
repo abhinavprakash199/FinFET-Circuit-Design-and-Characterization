@@ -124,7 +124,7 @@ Standard cell area scaling in Samsung’s advanced nodes—from 10nm to 5nm—de
 
 ### Parasitic Resistance
 --- 
-Parasitic resistance in transistors, particularly external resistance (R_EXT), arises from multiple components such as contact resistance (R_C), epitaxial layers (R_EPI), and interconnects (R_CA, R_TS). Initially, NFETs showed R_EXT dominated by R_C (63%), while PFETs had a more balanced distribution. Improvements have significantly reduced these resistances by optimizing contact interfaces and doping profiles. Lowering the Schottky Barrier Height (SBH) and increasing doping levels enhances ohmic and tunneling contacts, as described by the contact resistivity equation. These advancements contribute to better device performance and scaling efficiency.
+Parasitic resistance in transistors, particularly external resistance (R_EXT), arises from multiple components such as contact resistance (R_C), epitaxial layers (R_EPI), and interconnects (R_CA, R_TS). Initially, NFETs showed R_EXT dominated by R_C (63%), while PFETs had a more balanced distribution. Improvements have significantly reduced these resistances by optimizing contact interfaces and doping profiles. **Lowering the Schottky Barrier Height (SBH)** and **increasing doping levels** enhances ohmic and tunneling contacts, as described by the contact resistivity equation. These advancements contribute to better device performance and scaling efficiency.
 <img width="1611" height="662" alt="Screenshot 2025-08-28 161835" src="https://github.com/user-attachments/assets/dabeabe9-2968-4361-a7b1-4293d0da0341" />
 
 - Planar MOSFET: Has a parasitic resistance ratio <1, indicating low external resistance relative to channel resistance.
@@ -136,7 +136,7 @@ Parasitic resistance in transistors, particularly external resistance (R_EXT), a
 
 ### Parasitic Capacitance
 --- 
-Parasitic capacitance significantly impacts transistor performance, especially as technology scales from 22nm to 7nm. The breakdown of effective capacitance (Ceff) shows a growing dominance of gate capacitance (Cgc) and overlap capacitance (Cof) in advanced nodes, with (Cpa-ca) reducing from 56% at 22nm to just 15% at 7nm. Spacer materials play a crucial role—SiBCN spacers offer an 8% delay improvement and reduce Ceff compared to SiN. Air spacers further lower capacitance, achieving up to 15% reduction in ring oscillator stages. These innovations help minimize delay and enhance overall device speed and efficiency.
+Parasitic capacitance significantly impacts transistor performance, especially as technology scales from 22nm to 7nm. The breakdown of effective capacitance (Ceff) shows a growing dominance of gate capacitance (Cgc) and overlap capacitance (Cof) in advanced nodes, with Paracitics Capacitance (Cpa-ca) reducing from 56% at 22nm to just 15% at 7nm. Spacer materials play a crucial role—SiBCN spacers offer an 8% delay improvement and reduce Ceff compared to SiN. Air spacers further lower capacitance, achieving up to 15% reduction in ring oscillator stages. These innovations help minimize delay and enhance overall device speed and efficiency.
 
 <img width="1563" height="717" alt="Screenshot 2025-08-28 163623" src="https://github.com/user-attachments/assets/e54d98d5-593f-45ba-a2c8-d9d70e3160ea" />
 
@@ -147,6 +147,11 @@ Parasitic capacitance significantly impacts transistor performance, especially a
 ---
 ### 
 ---
+
+
+| Sr. No | W (Width) pMOS | L (Length) pMOS | (W/L Ratio) pMOS | W (Width) nMOS | L (Length) nMOS | (W/L Ratio) nMOS | Switching Threshold Voltage (mV) | Drain Current Id (µA) | Power Consumption (P) | Propagation Delay (t_pd) (ps) | Gain (Av) | Noise Margin NMH (mV) |Noise Margin NML (mV) | Transconductance (gm ×10^-3) | Frequency (f) (GHz) | Output Resistance (Ro) |
+|--------|----------------|-----------------|------------------|----------------|-----------------|------------------|----------------------------------|-----------------------|-----------------------|-------------------------------|-----------|-------------------|-----------------------------|---------------------|------------------------|----------|
+| 1      | 14             | 7 nm            | 2             | 14             | 7 nm            | 2                | 360.0123                          |                  | 3.495427e-05      | 0.2542201                      | 6.218056     | -34.5979  |  47.33490  | 1.288402                    | 22.23883             | 6.4122                 
 
 
 ## Module 3:
